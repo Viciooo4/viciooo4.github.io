@@ -36,6 +36,7 @@
             <nav class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
                 <a href="#servicios" class="hover:text-emerald-600 transition">Servicios</a>
                 <a href="#materiales" class="hover:text-emerald-600 transition">¿Qué recogemos?</a>
+                <a href="#equipos-restaurados" class="hover:text-emerald-600 transition">Equipos para Donar</a>
                 <a href="#proceso" class="hover:text-emerald-600 transition">Proceso</a>
                 <a href="#faq" class="hover:text-emerald-600 transition">FAQ</a>
             </nav>
@@ -201,6 +202,85 @@
         </div>
     </section>
 
+    <!-- Catálogo de Equipos Restaurados -->
+    <section id="equipos-restaurados" class="bg-emerald-50/50 border-y border-emerald-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Catálogo de Impacto</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Equipos Restaurados Disponibles</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Dispositivos limpios, reparados y listos para ser entregados gratuitamente a estudiantes o trabajadores que los necesiten.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-5 space-y-4">
+                        <span class="inline-block text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Listo para entrega</span>
+                        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-laptop text-emerald-600 mr-2"></i> Portátil de Estudio</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Ideal para labores de instituto, navegación y tareas de ofimática. Configurado con un sistema rápido y optimizado. Siempre que nos lo donen tenemos ¡tu REPUESTO!</p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 bg-slate-50 p-3 rounded-lg">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Intel i3/i5/17 / 4 8 16GB Memoria RAM</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Almacenamiento SSD o HDD2</li>
+                        </ul>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="seleccionarDispositivo('Portátil Lenovo')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 rounded-xl transition shadow-sm">Solicitar este equipo</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-5 space-y-4">
+                        <span class="inline-block text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Listo para entrega</span>
+                        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-desktop text-emerald-600 mr-2"></i> PC de Escritorio HP</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Estación fija completa ideal para el hogar. Formateado seguro y limpieza interna total de componentes. Siempre que nos lo donen tenemos ¡tu REPUESTO!</p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 bg-slate-50 p-3 rounded-lg">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Procesador Varios / </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> 4 8 16GB RAM</li>
+                        </ul>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="seleccionarDispositivo('PC de Escritorio HP')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 rounded-xl transition shadow-sm">Solicitar este equipo</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-5 space-y-4">
+                        <span class="inline-block text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Listo para entrega</span>
+                        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-tablet-screen-button text-emerald-600 mr-2"></i> Tablet Educativa 10"</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Dispositivo táctil ligero perfecto para lectura de PDF académicos, libros digitales y aplicaciones escolares. Siempre que nos lo donen tenemos ¡tu REPUESTO!</p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 bg-slate-50 p-3 rounded-lg">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Almacenamiento Interno</li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Batería con cargador incluido</li>
+                        </ul>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="seleccionarDispositivo('Tablet Educativa 10'')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 rounded-xl transition shadow-sm">Solicitar esta tablet</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-5 space-y-4">
+                        <span class="inline-block text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Listo para entrega</span>
+                        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-desktop text-emerald-600 mr-2"></i> Piezas Sueltas/ Componentes</h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">Tu sistema necesita alguna actualizacion o alguna pieza. Siempre que nos lo donen tenemos ¡tu REPUESTO!</p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 bg-slate-50 p-3 rounded-lg">
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Piezas </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Software </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Hardware </li>
+                            <li><i class="fa-solid fa-check text-emerald-500 mr-1"></i> Cables </li>
+                        </ul>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="seleccionarDispositivo('PC de Escritorio HP')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 rounded-xl transition shadow-sm">Solicitar este equipo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Paso a Paso del Proceso -->
     <section id="proceso" class="bg-slate-100 py-16 px-4">
         <div class="max-w-5xl mx-auto">
@@ -310,6 +390,7 @@
                             <option value="Quiero donar material o equipos">Quiero donar ordenadores / material</option>
                             <option value="Necesito reparar mi PC (sin coste)">Tengo un ordenador averiado y necesito arreglarlo</option>
                             <option value="Necesito recuperar datos de mi disco duro">Quiero recuperar datos de un equipo viejo</option>
+                            <option value="Quiero solicitar un equipo restaurado">Quiero solicitar un equipo restaurado de la lista</option>
                             <option value="Consulta general">Otra consulta / Información</option>
                         </select>
                     </div>
@@ -404,7 +485,15 @@
             const desc = document.getElementById('descripcion').value || '';
 
             const asunto = encodeURIComponent(`[ReciclaTech] Solicitud de ${nombre} - ${tipo}`);
-            const cuerpo = encodeURIComponent(`Hola Pablo,\n\nSoy ${nombre} y me pongo en contacto desde la web de ReciclaTech.\n\nTipo de solicitud: ${tipo}\nDetalles:\n${desc}\n\nUn saludo.`);
+            const cuerpo = encodeURIComponent(`Hola Pablo,
+
+Soy ${nombre} y me pongo en contacto desde la web de ReciclaTech.
+
+Tipo de solicitud: ${tipo}
+Detalles:
+${desc}
+
+Un saludo.`);
             
             window.location.href = `mailto:${EMAIL_CONTACTO}?subject=${asunto}&body=${cuerpo}`;
         }
@@ -413,6 +502,26 @@
             e.preventDefault();
             const texto = encodeURIComponent("Hola Pablo, he visto la página web del proyecto de Reciclaje Tecnológico y me gustaría ponerme en contacto contigo.");
             window.open(`https://wa.me/${TELEFONO_WHATSAPP}?text=${texto}`, '_blank');
+        }
+
+        // Nueva función interactiva para vincular las tarjetas con el formulario
+        function seleccionarDispositivo(nombreEquipo) {
+            const campoDetalle = document.getElementById('descripcion');
+            const tipoSolicitud = document.getElementById('tipoSolicitud');
+            const seccionContacto = document.getElementById('contacto');
+
+            if (tipoSolicitud) {
+                tipoSolicitud.value = "Quiero solicitar un equipo restaurado";
+            }
+            if (campoDetalle) {
+                campoDetalle.value = `Hola Pablo, estoy muy interesado en solicitar el siguiente equipo restaurado de vuestra lista: ${nombreEquipo}.
+
+Lo necesito principalmente para el siguiente fin educativo o laboral: `;
+            }
+            if (seccionContacto) {
+                seccionContacto.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => { campoDetalle.focus(); }, 600);
+            }
         }
     </script>
 </body>
