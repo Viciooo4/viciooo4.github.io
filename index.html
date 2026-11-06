@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaTech | Proyecto Académico de Reciclaje Tecnológico & Sostenibilidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldCustom: '#059669',
+                        slateDark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-emerald-600 text-white p-2 rounded-lg shadow-md">
+                    <i class="fa-solid fa-microchip text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl text-slate-900 tracking-tight">Recicla<span class="text-emerald-600">Tech</span></span>
+                    <span class="block text-xs text-slate-500 font-medium">Iniciativa Académica & Social</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#servicios" class="hover:text-emerald-600 transition">Servicios</a>
+                <a href="#materiales" class="hover:text-emerald-600 transition">¿Qué recogemos?</a>
+                <a href="#proceso" class="hover:text-emerald-600 transition">Proceso</a>
+                <a href="#faq" class="hover:text-emerald-600 transition">FAQ</a>
+            </nav>
+            <a href="#contacto" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i> Contactar
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                <i class="fa-solid fa-leaf"></i> Proyecto Académico de Reciclaje Tecnológico
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                Recuperamos tu tecnología, <br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">damos nueva vida al planeta</span>
+            </h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+                Recogemos **cualquier aparato informático, electrónico o de telecomunicaciones** (ordenadores, móviles, periféricos, routers). Ofrecemos reparación sin coste, recuperación de datos garantizada y reciclaje ecológico responsable.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contacto" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-emerald-500/20 transition flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-box-archive"></i> Quiero Donar o Reparar
+                </a>
+                <a href="#materiales" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-3.5 rounded-xl backdrop-blur transition flex items-center justify-center gap-2 text-base">
+                    <i class="fa-solid fa-list-check"></i> Ver qué aceptamos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarjetas de Servicios Principales -->
+    <section id="servicios" class="max-w-6xl mx-auto px-4 -mt-10 relative z-10">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-2xl p-6 shadow-xl border border-slate-100 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-recycle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Donación & Reciclaje</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Aceptamos todo tipo de tecnología: torres viejas, portátiles inservibles, teléfonos, routers, cables o impresoras. Si funciona lo restauramos, si no, lo reciclamos respetando el medioambiente.
+                    </p>
+                </div>
+                <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-md inline-block w-fit">100% Sostenible</span>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-xl border border-slate-100 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                <div>
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Recuperación de Datos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        ¿Tienes fotos o documentos atrapados en un disco duro de un ordenador viejo? Te los recuperamos **totalmente gratis** como agradecimiento por tu colaboración en el proyecto.
+                    </p>
+                </div>
+                <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1.5 rounded-md inline-block w-fit">Gratis para donantes</span>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-xl border border-slate-100 flex flex-col justify-between hover:-translate-y-1 transition duration-300">
+                <div>
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl font-bold mb-4">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Reparación sin Coste</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Si tienes un equipo averiado que necesitas utilizar pero no requiere comprar piezas nuevas, nos ofrecemos a intentar arreglarlo en nuestra iniciativa sin cobrar mano de obra.
+                    </p>
+                </div>
+                <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-md inline-block w-fit">Sin coste de mano de obra</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Filtro interactivo de materiales aceptados -->
+    <section id="materiales" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center space-y-3 mb-10">
+            <h2 class="text-3xl font-extrabold text-slate-900">¿Qué tipo de material recogemos?</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Aceptamos **cualquier elemento tecnológico**. Filtra para ver ejemplos de lo que puedes traer o donar.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="flex flex-wrap justify-center gap-2 mb-8">
+            <button onclick="filtrar('todos')" class="btn-filtro active bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition" id="btn-todos">Todos los aparatos</button>
+            <button onclick="filtrar('pcs')" class="btn-filtro bg-white text-slate-700 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 transition" id="btn-pcs">PCs & Portátiles</button>
+            <button onclick="filtrar('moviles')" class="btn-filtro bg-white text-slate-700 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 transition" id="btn-moviles">Móviles & Tablets</button>
+            <button onclick="filtrar('componentes')" class="btn-filtro bg-white text-slate-700 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 transition" id="btn-componentes">Piezas & Componentes</button>
+            <button onclick="filtrar('telecom')" class="btn-filtro bg-white text-slate-700 hover:bg-slate-100 px-4 py-2 rounded-lg text-sm font-medium border border-slate-200 transition" id="btn-telecom">Redes & Cables</button>
+        </div>
+
+        <!-- Grid de Tarjetas -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4" id="grid-materiales">
+            
+            <div class="item-material pcs bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-desktop text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Torres de PC viejas</h4>
+                    <span class="text-xs text-slate-500">Funcionen o no</span>
+                </div>
+            </div>
+
+            <div class="item-material pcs bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-laptop text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Portátiles estropeados</h4>
+                    <span class="text-xs text-slate-500">Antiguos o con pantalla rota</span>
+                </div>
+            </div>
+
+            <div class="item-material moviles bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-mobile-screen-button text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Teléfonos Móviles</h4>
+                    <span class="text-xs text-slate-500">Smartphones o antiguos</span>
+                </div>
+            </div>
+
+            <div class="item-material moviles bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-tablet-screen-button text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Tablets e E-readers</h4>
+                    <span class="text-xs text-slate-500">Cualquier estado</span>
+                </div>
+            </div>
+
+            <div class="item-material componentes bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-hard-drive text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Discos Duros / SSD</h4>
+                    <span class="text-xs text-slate-500">Con borrado de datos</span>
+                </div>
+            </div>
+
+            <div class="item-material componentes bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-memory text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">RAM, Procesadores, GPUs</h4>
+                    <span class="text-xs text-slate-500">Piezas sueltas</span>
+                </div>
+            </div>
+
+            <div class="item-material telecom bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-wifi text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Routers y Switches</h4>
+                    <span class="text-xs text-slate-500">Equipos de red</span>
+                </div>
+            </div>
+
+            <div class="item-material telecom bg-white p-4 rounded-xl border border-slate-200 flex items-center gap-3">
+                <i class="fa-solid fa-plug text-2xl text-emerald-600"></i>
+                <div>
+                    <h4 class="font-bold text-slate-800 text-sm">Cables, Cargadores y Varios</h4>
+                    <span class="text-xs text-slate-500">Cualquier tipo de cableado</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Paso a Paso del Proceso -->
+    <section id="proceso" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">¿Cómo trabajamos paso a paso?</h2>
+                <p class="text-slate-600">Garantizamos transparencia, seguridad en tus datos y reciclaje responsable.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center space-y-3 border-t-4 border-emerald-500">
+                    <span class="w-8 h-8 bg-emerald-100 text-emerald-700 font-bold rounded-full flex items-center justify-center mx-auto text-sm">1</span>
+                    <h4 class="font-bold text-slate-900">Recepción</h4>
+                    <p class="text-slate-600 text-xs">Nos contactas por privado y coordinamos la entrega del material o equipo.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center space-y-3 border-t-4 border-emerald-500">
+                    <span class="w-8 h-8 bg-emerald-100 text-emerald-700 font-bold rounded-full flex items-center justify-center mx-auto text-sm">2</span>
+                    <h4 class="font-bold text-slate-900">Datos & Diagnóstico</h4>
+                    <p class="text-slate-600 text-xs">Extraemos tus datos personales si lo deseas y formateamos los discos de forma segura.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center space-y-3 border-t-4 border-emerald-500">
+                    <span class="w-8 h-8 bg-emerald-100 text-emerald-700 font-bold rounded-full flex items-center justify-center mx-auto text-sm">3</span>
+                    <h4 class="font-bold text-slate-900">Restauración</h4>
+                    <p class="text-slate-600 text-xs">Limpiamos, reparamos y combinamos piezas para dejar los sistemas funcionales.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center space-y-3 border-t-4 border-emerald-500">
+                    <span class="w-8 h-8 bg-emerald-100 text-emerald-700 font-bold rounded-full flex items-center justify-center mx-auto text-sm">4</span>
+                    <h4 class="font-bold text-slate-900">Donación / Reciclaje</h4>
+                    <p class="text-slate-600 text-xs">Donamos los equipos restaurados o reciclamos de forma limpia el material inservible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes Accordion -->
+    <section id="faq" class="max-w-4xl mx-auto px-4 py-16">
+        <div class="text-center space-y-3 mb-10">
+            <h2 class="text-3xl font-extrabold text-slate-900">Preguntas Frecuentes</h2>
+            <p class="text-slate-600">Resolvemos tus dudas sobre el borrado de datos, costes y materiales.</p>
+        </div>
+
+        <div class="space-y-4">
+            
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq('faq1')" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition">
+                    <span>¿Cuesta dinero recuperar mis datos o intentar arreglar mi PC?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400" id="icon-faq1"></i>
+                </button>
+                <div id="faq1" class="hidden p-4 text-slate-600 text-sm border-t border-slate-100 bg-slate-50">
+                    No, es **100% gratuito**. Al aportar tu grano de arena donando o participando en el proyecto ya nos estás ayudando a sacar adelante esta iniciativa académica y social.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq('faq2')" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition">
+                    <span>¿Qué pasa con mi información confidencial o mis fotos viejas?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400" id="icon-faq2"></i>
+                </button>
+                <div id="faq2" class="hidden p-4 text-slate-600 text-sm border-t border-slate-100 bg-slate-50">
+                    Si estáis interesados en conservar vuestros datos, os los extraemos y devolvemos sin problema (siempre que el disco esté en buen estado). Posteriormente, realizamos un formateo profundo a los discos duros para garantizar la privacidad antes de reutilizarlos.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq('faq3')" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition">
+                    <span>¿Aceptáis componentes rotos o material muy antiguo?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400" id="icon-faq3"></i>
+                </button>
+                <div id="faq3" class="hidden p-4 text-slate-600 text-sm border-t border-slate-100 bg-slate-50">
+                    ¡Sí! Muchas piezas que parecen inservibles nos sirven para reparar otros equipos. Y si algo está completamente roto, nos encargamos de llevarlo al punto limpio adecuado para su correcto reciclaje ecológico.
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+                <button onclick="toggleFaq('faq4')" class="w-full text-left p-4 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 transition">
+                    <span>¿A quién van destinados los ordenadores reparados?</span>
+                    <i class="fa-solid fa-chevron-down text-slate-400" id="icon-faq4"></i>
+                </button>
+                <div id="faq4" class="hidden p-4 text-slate-600 text-sm border-t border-slate-100 bg-slate-50">
+                    Los equipos arreglados se donan a personas que los necesiten para estudiar o trabajar, o se devuelven arreglados sin coste a los mismos donantes que necesitaban recuperar su ordenador sin hacer un desembolso económico.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Formulario / Sección de Contacto -->
+    <section id="contacto" class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 p-8 md:p-12">
+            <div class="text-center space-y-3 mb-8">
+                <span class="text-emerald-600 font-bold text-sm tracking-wider uppercase">Ponte en contacto</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">¿Quieres donar o necesitas ayuda?</h2>
+                <p class="text-slate-600 text-sm">Rellena este breve formulario y se enviará un mensaje directo al responsable del proyecto (**Pablo Pérez**).</p>
+            </div>
+
+            <form id="formRecicla" onsubmit="enviarMensaje(event)" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Tu Nombre</label>
+                        <input type="text" id="nombre" required placeholder="Ej. Ana García" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Tipo de Solicitud</label>
+                        <select id="tipoSolicitud" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition text-sm bg-white">
+                            <option value="Quiero donar material o equipos">Quiero donar ordenadores / material</option>
+                            <option value="Necesito reparar mi PC (sin coste)">Tengo un ordenador averiado y necesito arreglarlo</option>
+                            <option value="Necesito recuperar datos de mi disco duro">Quiero recuperar datos de un equipo viejo</option>
+                            <option value="Consulta general">Otra consulta / Información</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Detalla el material o equipo</label>
+                    <textarea id="descripcion" rows="4" required placeholder="Describe qué quieres donar o qué le ocurre a tu ordenador (Ej. Tengo un portátil viejo que no enciende y una torre...)" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition text-sm"></textarea>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Contactar por WhatsApp
+                    </button>
+                    <button type="button" onclick="enviarEmail()" class="flex-1 bg-slate-800 hover:bg-slate-900 text-white font-bold py-4 rounded-xl shadow transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope text-lg"></i> Contactar por Email
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Botón Flotante directo a WhatsApp -->
+    <a href="#" onclick="abrirWhatsappDirecto(event)" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center text-2xl z-50 transition transform hover:scale-110" title="Contactar con Pablo Pérez">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-xs">
+        <div class="max-w-6xl mx-auto px-4 space-y-3">
+            <p class="font-semibold text-slate-300">ReciclaTech - Proyecto Académico de Reciclaje Tecnológico y Sostenibilidad</p>
+            <p>Coordinado por Pablo Pérez. Todos los servicios de reparación y recuperación de datos son gratuitos dentro del marco del proyecto.</p>
+        </div>
+    </footer>
+
+    <!-- Lógica de Enlaces Ocultos & Funcionalidad -->
+    <script>
+        const TELEFONO_WHATSAPP = "34693556681";
+        const EMAIL_CONTACTO = "pabloperezpuerto86@gmail.com";
+
+        function filtrar(categoria) {
+            const items = document.querySelectorAll('.item-material');
+            const botones = document.querySelectorAll('.btn-filtro');
+
+            botones.forEach(btn => {
+                btn.classList.remove('bg-slate-900', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            const btnActivo = document.getElementById('btn-' + categoria);
+            if (btnActivo) {
+                btnActivo.classList.remove('bg-white', 'text-slate-700');
+                btnActivo.classList.add('bg-slate-900', 'text-white');
+            }
+
+            items.forEach(item => {
+                if (categoria === 'todos' || item.classList.contains(categoria)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleFaq(id) {
+            const faq = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (faq.classList.contains('hidden')) {
+                faq.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                faq.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function enviarMensaje(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const tipo = document.getElementById('tipoSolicitud').value;
+            const desc = document.getElementById('descripcion').value;
+
+            const texto = `Hola Pablo, soy ${nombre}. Me contacto a través de la web del Proyecto de Reciclaje Tecnológico.%0A%0A*Tipo de solicitud:* ${tipo}%0A*Detalles:* ${desc}`;
+            
+            window.open(`https://wa.me/${TELEFONO_WHATSAPP}?text=${texto}`, '_blank');
+        }
+
+        function enviarEmail() {
+            const nombre = document.getElementById('nombre').value || 'Interesado';
+            const tipo = document.getElementById('tipoSolicitud').value;
+            const desc = document.getElementById('descripcion').value || '';
+
+            const asunto = encodeURIComponent(`[ReciclaTech] Solicitud de ${nombre} - ${tipo}`);
+            const cuerpo = encodeURIComponent(`Hola Pablo,\n\nSoy ${nombre} y me pongo en contacto desde la web de ReciclaTech.\n\nTipo de solicitud: ${tipo}\nDetalles:\n${desc}\n\nUn saludo.`);
+            
+            window.location.href = `mailto:${EMAIL_CONTACTO}?subject=${asunto}&body=${cuerpo}`;
+        }
+
+        function abrirWhatsappDirecto(e) {
+            e.preventDefault();
+            const texto = encodeURIComponent("Hola Pablo, he visto la página web del proyecto de Reciclaje Tecnológico y me gustaría ponerme en contacto contigo.");
+            window.open(`https://wa.me/${TELEFONO_WHATSAPP}?text=${texto}`, '_blank');
+        }
+    </script>
+</body>
+</html>
